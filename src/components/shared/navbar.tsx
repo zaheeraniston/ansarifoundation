@@ -93,7 +93,7 @@ export function Navbar() {
       </div>
 
       {/* Top bar */}
-      <div className="hidden lg:block bg-royal text-white text-sm">
+      <div className="hidden xl:block bg-royal text-white text-sm">
         <div className="container-premium mx-auto px-6 flex items-center justify-between py-2">
           <div className="flex items-center gap-6">
             <a
@@ -136,25 +136,25 @@ export function Navbar() {
                 e.preventDefault();
                 handleNavClick("#home");
               }}
-              className="flex items-center gap-3 group"
+              className="flex items-center gap-2 sm:gap-3 group flex-shrink-0"
             >
               <img
                 src="/logo.png"
                 alt="Ansari Foundation Assam"
-                className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl object-contain p-0.5"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl object-contain p-0.5 flex-shrink-0"
               />
-              <div>
-                <h1 className="text-royal dark:text-white font-heading font-bold text-sm sm:text-base md:text-lg leading-tight">
+              <div className="flex-shrink-0">
+                <h1 className="text-royal dark:text-white font-heading font-bold text-xs sm:text-sm md:text-base lg:text-lg leading-none sm:leading-tight whitespace-nowrap">
                   Ansari Foundation
                 </h1>
-                <p className="text-emerald dark:text-emerald-light text-[10px] sm:text-xs font-medium tracking-wider">
+                <p className="text-emerald dark:text-emerald-light text-[8px] sm:text-[10px] md:text-xs font-semibold tracking-wider whitespace-nowrap mt-0.5 sm:mt-1">
                   EDUCATION • ENDURANCE • EXPOSURE
                 </p>
               </div>
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden xl:flex items-center gap-1">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
@@ -192,7 +192,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden rounded-full min-w-[44px] min-h-[44px]"
+                className="xl:hidden rounded-full min-w-[44px] min-h-[44px]"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
               >
@@ -210,7 +210,7 @@ export function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: "easeInOut" }}
-              className="lg:hidden bg-white dark:bg-gray-900 border-t border-border/50"
+              className="xl:hidden bg-white dark:bg-gray-900 border-t border-border/50"
             >
               <div className="px-4 py-3 space-y-1">
                 {NAV_LINKS.map((link, index) => (
