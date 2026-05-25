@@ -173,41 +173,12 @@ export function DonateSection() {
               <h3 className="font-heading font-bold text-xl text-white mb-4">
                 Donate via UPI
               </h3>
-              <p className="text-white/60 text-sm mb-6">
-                Scan the QR code or use the UPI ID to make a direct donation. All
-                transactions are secure and you will receive a confirmation receipt.
-              </p>
-
-              <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
-                {/* QR Code Placeholder */}
-                <div className="w-28 h-28 sm:w-40 sm:h-40 rounded-2xl bg-white flex items-center justify-center flex-shrink-0">
-                  <div className="text-center">
-                    <QrCode className="w-16 h-16 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500 text-xs">Scan to Donate</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3 sm:space-y-4 w-full text-center sm:text-left">
-                  <div>
-                    <p className="text-white/60 text-xs uppercase tracking-wider mb-1">
-                      UPI ID
-                    </p>
-                    <div className="inline-flex sm:flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                      <Smartphone className="w-4 h-4 text-gold" />
-                      <span className="text-white text-xs sm:text-sm font-mono">
-                        ansari@upi
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-white/60 text-xs uppercase tracking-wider mb-1">
-                      Bank Transfer
-                    </p>
-                    <p className="text-white/80 text-xs sm:text-sm">
-                      See bank details below
-                    </p>
-                  </div>
-                </div>
+              <div className="flex flex-col items-center justify-center py-8 text-center bg-white/5 border border-white/10 rounded-2xl p-6">
+                <Smartphone className="w-12 h-12 text-gold mb-3 animate-pulse" />
+                <h4 className="font-heading font-bold text-base sm:text-lg text-white mb-2">UPI Payments Coming Soon</h4>
+                <p className="text-white/60 text-xs sm:text-sm max-w-sm leading-relaxed">
+                  We are currently setting up our official UPI payment integration. For now, please use the **Bank Account Details** option below to make your contributions.
+                </p>
               </div>
             </div>
 
